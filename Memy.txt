@@ -1,0 +1,9 @@
+Hi9_RDly_Var:
+ #Lang
+  0 - Japanese. default
+  1 - English.
+ #Enabled
+  1/0
+
+change_global_delay
+  change_indiv_delay
