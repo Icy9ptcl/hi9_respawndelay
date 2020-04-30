@@ -1,10 +1,12 @@
 # なんか ごっちゃになってて面白くないので
 # as {人 主観} で実行したい
-execute as @e[type=armor_stand,tag=Hi9_ResD] run scoreboard players operation @s Hi9_RDly_tmp = @s Hi9_RDly_ID
-execute as @e[type=armor_stand,tag=Hi9_ResD] run scoreboard players operation @s Hi9_RDly_tmp -= @a[tag=Hi9_RDly_Resp] Hi9_RDly_ID
+
+execute as @e[type=armor_stand,tag=Hi9_RDly_WIP] run scoreboard players operation @s Hi9_RDly_tmp = @s Hi9_RDly_ID
+# execute as @e[type=armor_stand,tag=Hi9_ResD] run scoreboard players operation @s Hi9_RDly_tmp -= @a[tag=Hi9_RDly_Resp] Hi9_RDly_ID
+scoreboard players operation @e[type=armor_stand,tag=Hi9_RDly_WIP] Hi9_RDly_tmp -= @s Hi9_RDly_ID
 
 # No diff!
-execute as @e[type=armor_stand,tag=Hi9_ResD,scores={Hi9_RDly_tmp=0}] run tp @a[tag=Hi9_RDly_Resp] @s
+tp @s @e[type=armor_stand,tag=Hi9_ResD,scores={Hi9_RDly_tmp=0},limit=1] 
 
 tag @e[type=armor_stand,tag=Hi9_ResD,scores={Hi9_RDly_tmp=0}] remove Hi9_RDly_WIP
 

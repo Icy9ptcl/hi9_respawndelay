@@ -5,6 +5,7 @@ Hi9_RDly_Var:
  #Enabled
   1/0
  #DisableSpec
+ #DisableEff
 
 change_global_delay
   change_indiv_delay
