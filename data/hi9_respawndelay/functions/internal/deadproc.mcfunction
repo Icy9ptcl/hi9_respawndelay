@@ -1,4 +1,6 @@
 #Shorten time
+scoreboard players remove @s Hi9_RDly_Count 1
+
 scoreboard players operation #TimeS Hi9_RDly_Var = @s Hi9_RDly_Count
 scoreboard players operation #TimeS Hi9_RDly_Var /= #TimeDivS Hi9_RDly_Var
 
@@ -20,4 +22,3 @@ execute if score #TimeD Hi9_RDly_Var matches 0 unless score #TimeS Hi9_RDly_Var 
 
 execute if score @s Hi9_RDly_Count matches ..0 run function hi9_respawndelay:internal/respawn
 
-scoreboard players remove @s Hi9_RDly_Count 1
