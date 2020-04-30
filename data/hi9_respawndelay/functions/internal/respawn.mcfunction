@@ -1,5 +1,7 @@
 gamemode survival @s
 
+
+tag @s remove Hi9_RD_Dead
 #Who will respawn ???
 tag @s add Hi9_RDly_Resp
 

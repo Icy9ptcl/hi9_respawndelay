@@ -3,6 +3,7 @@
 scoreboard players operation @s Hi9_RDly_DeathP = @s Hi9_RDly_Deaths
 
 gamemode spectator @s
+tag @s add Hi9_RD_Dead
 # Summon a thing for respawn point
 execute at @s run summon armor_stand ~ ~1 ~ {Tags:["Hi9_ResD","Hi9_ResDn"],NoGravity:1b,Marker:1b,Invulnerable:1b,PersistenceRequired:1b,Invisible:1b}
 

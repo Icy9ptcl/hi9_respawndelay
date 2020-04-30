@@ -1,6 +1,9 @@
 scoreboard objectives remove Hi9_RDly_Var
 scoreboard objectives add Hi9_RDly_Var dummy
 
+#Revision
+scoreboard players set #Rev Hi9_RDly_Var 1
+
 scoreboard players set #Enabled Hi9_RDly_Var 1
 
 tellraw @a [{"text":"[Hi9_RespawnDelay] 設定をリセットしました。\n","color":"green"},{"text":"  Configuration was successfully reset.","color":"yellow"}]

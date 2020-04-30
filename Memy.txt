@@ -4,6 +4,7 @@ Hi9_RDly_Var:
   1 - English.
  #Enabled
   1/0
+ #DisableSpec
 
 change_global_delay
   change_indiv_delay
