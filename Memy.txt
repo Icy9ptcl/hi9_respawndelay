@@ -6,6 +6,9 @@ Hi9_RDly_Var:
   1/0
  #DisableSpec
  #DisableEff
+ #Gamemode
 
-change_global_delay
-  change_indiv_delay
+
+ change_gamemode
+
+#Not yet optimized.

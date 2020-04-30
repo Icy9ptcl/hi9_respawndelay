@@ -6,4 +6,6 @@ execute if score #Lang Hi9_RDly_Var matches 0 run tellraw @a [{"text":"[Hi9_Resp
 
 execute if score #Lang Hi9_RDly_Var matches 1 run tellraw @a [{"text":"[Hi9_RespawnDelay] The system is now activated.\n"},{"text":"  gamerule: doImmediateRespawn has been enabled due to its functionality.\n","color":"gray"},{"text":"  (For usage, run /function hi9_respawndelay:help or click here if you want to save time)","color":"gray","underlined":true,"clickEvent":{"action":"suggest_command","value":"/function hi9_respawndelay:help"}}]
 
+execute as @a run scoreboard players operation @s Hi9_RDly_DeathP = @s Hi9_RDly_Deaths
+
 execute as @s run function hi9_respawndelay:help

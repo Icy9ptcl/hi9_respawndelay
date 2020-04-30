@@ -12,9 +12,9 @@ scoreboard players operation @s Hi9_RDly_ID = #ID Hi9_RDly_ID
 scoreboard players operation @e[type=armor_stand,tag=Hi9_ResDn] Hi9_RDly_ID = #ID Hi9_RDly_ID
 tag @e[type=armor_stand,tag=Hi9_ResDn] remove Hi9_ResDn
 
-execute at @s run playsound entity.bat.death master @s ~ ~ ~ 1 1
+execute if score #DisableEff Hi9_RDly_Var matches 0 run execute at @s run playsound entity.bat.death master @s ~ ~ ~ 1 1
+execute if score #DisableEff Hi9_RDly_Var matches 0 run effect give @s blindness 1 1 true
 title @s times 0 20 10
-effect give @s blindness 1 1 true
 
 #Hi9_RDly_Time
 # - !Global

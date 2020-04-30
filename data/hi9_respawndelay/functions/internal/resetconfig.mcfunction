@@ -1,10 +1,21 @@
 scoreboard objectives remove Hi9_RDly_Var
+scoreboard objectives remove Hi9_RDly_Time
+
 scoreboard objectives add Hi9_RDly_Var dummy
+scoreboard objectives add Hi9_RDly_Time dummy
 
 #Revision
 scoreboard players set #Rev Hi9_RDly_Var 1
 
 scoreboard players set #Enabled Hi9_RDly_Var 1
+scoreboard players set #DisableSpec Hi9_RDly_Var 0
+scoreboard players set #DisableEff Hi9_RDly_Var 0
+scoreboard players set #Gamemode Hi9_RDly_Var 0
+scoreboard players set #Lang Hi9_RDly_Var 0
+scoreboard players set #Global Hi9_RDly_Time 100
+
+scoreboard players set #TimeDivS Hi9_RDly_Var 20
+scoreboard players set #TimeDivD Hi9_RDly_Var 5
 
 tellraw @a [{"text":"[Hi9_RespawnDelay] 設定をリセットしました。\n","color":"green"},{"text":"  Configuration was successfully reset.","color":"yellow"}]
 
