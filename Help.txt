@@ -1,4 +1,0 @@
-C:\Users\Icy9ptcl\My Files\minecraft\MyDataPack\MyTest
-
-PS 
-zip -r "C:\Users\Icy9ptcl\AppData\Roaming\.minecraft\saves\DataPacky (1)\datapacks\Hi9_RespawnDelay.zip" *
