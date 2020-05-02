@@ -10,7 +10,7 @@ execute as @a[scores={Hi9_RDly_DTime=0}] run function hi9_respawndelay:rip
 execute as @a[scores={Hi9_RDly_DTime=2}] run function hi9_respawndelay:internal/setspawn
 
 # I guess I can delete this scoreboard since I have DTime thing. #TO/DO
-execute as @a[scores={Hi9_RDly_Count=0..}] run function hi9_respawndelay:internal/deadproc
+execute as @a[scores={Hi9_RDly_Count=1..}] run function hi9_respawndelay:internal/deadproc
 
 # Spectating disabled.
 execute if entity @a[scores={Hi9_RDly_Count=1..}] if score #DisableSpec Hi9_RDly_Var matches 1 run function hi9_respawndelay:internal/disablemove
