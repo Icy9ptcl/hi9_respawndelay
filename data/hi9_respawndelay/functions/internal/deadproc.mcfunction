@@ -20,5 +20,5 @@ execute if score #Lang Hi9_RDly_Var matches 1 run title @s title [{"text":"You d
 
 execute if score #TimeD Hi9_RDly_Var matches 0 unless score #TimeS Hi9_RDly_Var matches 0 if score #DisableEff Hi9_RDly_Var matches 0 run execute at @s run playsound block.note_block.hat master @s ~ ~ ~ 0.8 2
 
-execute if score @s Hi9_RDly_Count matches ..0 run function hi9_respawndelay:internal/respawn
+execute if score @s Hi9_RDly_Count matches ..0 run function hi9_respawndelay:respawn
 
